@@ -13,3 +13,5 @@ App is at packages/qwik-app and is the `npm create qwik@latest` basic app starte
 2. `localhost:5173` and see QWIK LIBRARY LOGO and QWIK LIBRARY COUNTER in the "You can count on me" section
 
 Will need to redo the lib build or setup scripts/watchers in order to see changes. Alternatively for the best monorepo experience use https://github.com/qwikifiers/qwik-nx
+
+For an NX example you can see https://github.com/genie-design/qwikbits
