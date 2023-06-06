@@ -1,47 +1,15 @@
-# Qwik Library ⚡️
+Qwik lib starter using [pnpm workspaces monorepo](https://pnpm.io/workspaces) 
 
-- [Qwik Docs](https://qwik.builder.io/)
-- [Discord](https://qwik.builder.io/chat)
-- [Qwik on GitHub](https://github.com/BuilderIO/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
-- [Partytown](https://partytown.builder.io/)
-- [Mitosis](https://github.com/BuilderIO/mitosis)
-- [Builder.io](https://www.builder.io/)
+Lib is at packages/component-lib and is the `npm create qwik@latest` component lib starter as of 2023-06-06
 
----
+App is at packages/qwik-app and is the `npm create qwik@latest` basic app starter as of 2023-06-06
 
-## Project Structure
+1. [Install pnpm](https://pnpm.io/installation)
+1. `pnpm install`
+1. `cd packages/component-lib`
+1. `pnpm build`
+1. `cd ../qwik-app`
+1. `pnpm dev`
+2. `localhost:5173` and see QWIK LIBRARY LOGO and QWIK LIBRARY COUNTER in the "You can count on me" section
 
-Inside your project, you'll see the following directories and files:
-
-```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── index.ts
-```
-
-- `src/components`: Recommended directory for components.
-
-- `index.ts`: The entry point of your component library, make sure all the public components are exported from this file.
-
-## Development
-
-Development mode uses [Vite's development server](https://vitejs.dev/). For Qwik during development, the `dev` command will also server-side render (SSR) the output. The client-side development modules are loaded by the browser.
-
-```
-pnpm dev
-```
-
-> Note: during dev mode, Vite will request many JS files, which does not represent a Qwik production build.
-
-## Production
-
-The production build should generate the production build of your component library in (./lib) and the typescript type definitions in (./lib-types).
-
-```
-pnpm build
-```
+Will need to redo the lib build or setup scripts/watchers in order to see changes. Alternatively for the best monorepo experience use https://github.com/qwikifiers/qwik-nx
